@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: cursive;
+  overflow-x: hidden;
+}
+img {
+  /* width: 100%; */
+  height: 100%;
+}
+video {
+  max-width: 100%;
+  max-height: 100%;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.cont {
+  width: 80%;
+  margin: auto;
+}
+.btn {
+  background: #568dca;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  margin: 20px;
+  display: block;
+}
+header {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.navbar .cont {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+.logo {
+  height: 60px;
+  display: inline-block;
+  margin: 0;
+}
+@media (max-width: 990) {
+  .logo {
+    height: 10px;
+    display: inline-block;
+  }
+}
+.navbar ul {
+  display: flex;
+}
+.humb {
+  display: none;
+}
+.dash {
+  display: none;
+  transition: 10s linear;
+}
+@media (max-width: 990px) {
+  .navbar ul {
+    display: none;
+  }
+  .humb {
+    display: block;
+    z-index: 100;
+  }
+  .dash {
+    display: flex;
+    transition: 10s linear;
+  }
+  .show {
+    background: cornsilk;
+    display: flex;
+    height: 100vh;
+    width: 60vw;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .not-show {
+    display: none;
+  }
+}
+.navbar ul li a {
+  font-size: 1.2rem;
+  color: #568dca;
+  padding: 20px 20px;
+}
+.navbar ul li a:hover {
+  border-bottom: 2px solid #568dca;
+}
+
+.intro {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* margin-top: 100px; */
+}
+.intro h1 {
+  color: #36587f;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.intro p {
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  margin-bottom: 7px;
+  max-width: 50%;
+}
+@media (max-width: 990) {
+  .intro {
+    margin-top: 200px;
+  }
+  .intro h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .intro p {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    margin-bottom: 7px;
+    max-width: 50%;
+  }
+}
+footer {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  background: rgba(86, 141, 202, 0.5);
+}
