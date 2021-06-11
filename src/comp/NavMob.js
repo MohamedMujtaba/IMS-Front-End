@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/navMob.css";
 
+
 const NavMob = ({ clicked, Taggle }) => {
   return (
     <div className="menu-cont humb">

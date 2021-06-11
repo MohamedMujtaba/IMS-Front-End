@@ -11,9 +11,7 @@ const Courses = () => {
   const [loading, setLoading] = useState(true);
 
   const getCourses = async () => {
-    const response = await fetch(
-      "https://imsuofkserver.herokuapp.com/api/v1/courses"
-    );
+    const response = await fetch("https://imsuofkserver.herokuapp.com/api/v1/courses");
     const data = await response.json();
     setCourses(data);
     setLoading(false);
@@ -27,13 +25,13 @@ const Courses = () => {
     return <Loading />;
   }
   return (
-    <div className="disp">
+    <main>
       <div className="cont">
         {courses.map((cor) => (
           <Course key={cor.id} {...cor} />
         ))}
       </div>
-    </div>
+    </main>
   );
 };
 

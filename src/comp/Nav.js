@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../img/LMS (3).png";
 import NavMob from "./NavMob";
+import  {AiOutlineHome} from 'react-icons/ai'
+import  {BiLogIn} from 'react-icons/bi'
+import  {BsInfoCircle} from 'react-icons/bs'
+import  {IoSchoolOutline} from 'react-icons/io5'
+
 const Nav = () => {
   const [clicked, setClicked] = useState(false);
   const Taggle = () => {
@@ -20,10 +25,10 @@ const Nav = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/courses">courses</Link>
+              <Link to="/courses">Courses</Link>
             </li>
             <li>
-              <Link to="/login">registre</Link>
+              <Link to="/login">Registre</Link>
             </li>
             <li>
               <Link to="/info">Info</Link>
@@ -31,18 +36,22 @@ const Nav = () => {
           </ul>
         </div>
       </nav>
-      <div className={clicked ? `dash show` : `dash not-show`}>
+      <div id="nav" style={clicked ? {'transform': 'scaleX(1)'} : {'transform':'scaleX(0)'}} className='show'>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+          <AiOutlineHome/>
+            <Link to="/"> Home</Link>
           </li>
           <li>
-            <Link to="/courses">courses</Link>
+          <IoSchoolOutline/>
+            <Link to="/courses"> Courses</Link>
           </li>
           <li>
-            <Link to="/login">registre</Link>
+          <BiLogIn/>
+            <Link to="/login">Registre</Link>
           </li>
           <li>
+          <BsInfoCircle/>
             <Link to="/info">Info</Link>
           </li>
         </ul>

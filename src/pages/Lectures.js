@@ -28,13 +28,13 @@ const Lectures = ({ match }) => {
 
   return (
     <>
-      <div className="disp">
+      <main>
         <div className="cont">
           {lectures.lectures.map((lec) => (
             <Lecture key={lec.id} {...lec} />
           ))}
         </div>
-      </div>
+      </main>
     </>
   );
 };

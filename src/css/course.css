@@ -20,14 +20,15 @@
   border-top-right-radius: 10px;
   margin-bottom: 25px;
 }
-.disp .cont {
+main .cont {
   width: 100vw;
+  /* min-height: 100vh; */
+  /* height: 100vh; */
   display: flex;
+  flex-direction: row;
   padding-top: 50px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-/* .btn {
-  display: block;
-} */
+

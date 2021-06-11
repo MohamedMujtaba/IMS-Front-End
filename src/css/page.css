@@ -12,8 +12,29 @@
   /* border: orangered solid 1px; */
   /* border-bottom: solid 1px #568dca; */
   box-shadow: 2px 2px 20px #568dca;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+  position: relative;
+  transition:all 200ms ease-in-out;
+  /*transform-origin: top; */
 }
+
+.lecture-info::before {
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width:4px;
+  background:#568dca;
+  transition:all 500ms ease-in-out;
+  transform-origin: top;
+  transform: scaleY(0);
+
+}
+.lecture-info:hover::before{
+  transform: scaleY(1);
+}
+
 .lecture-info h3 {
   color: #568dca;
   padding-bottom: 2px;
@@ -37,16 +58,4 @@
   width: 6rem;
   text-align: start;
   font-weight: bold;
-}
-@media (max-width: 990) {
-  .lecture-info .title {
-    font-size: 16px;
-    color: crimson;
-  }
-  .lecture-info p {
-    font-size: 50px;
-  }
-  .btn-more {
-    font-size: 10px;
-  }
 }
