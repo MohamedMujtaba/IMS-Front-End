@@ -31,4 +31,9 @@ main .cont {
   align-items: center;
   justify-content: center;
 }
-
+@media (max-width: 990px) {
+  main .cont{
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
