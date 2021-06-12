@@ -1,5 +1,5 @@
 section {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,7 +7,7 @@ section {
   overflow: hidden;
 }
 .login-cont {
-  height: 80%;
+  height: 95%;
   width: 400px;
   display: flex;
   flex-direction: column;
@@ -65,8 +65,13 @@ label {
 
 @media only screen and (max-width: 720px) {
   .login-cont {
-    /* height: 90%; */
+    height: 100%;
     width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  section {
+    height: 70vh;
   }
 }
 /* @media only screen and (min-width: 1200px) {

@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom"
 import React from "react";
 import "../css/login.css";
 import logo from "../img/LMS (3).png";
@@ -7,9 +8,9 @@ const Login = () => {
     <>
       <section>
         <div className="login-cont">
-          <a href="index.html">
+        <Link className="logo-cont" to="/">
             <img className="logo" src={logo} alt="" />
-          </a>
+          </Link>
           <div className="input-handler">
             <label for="university ID">University ID</label>
             <input type="number" name="university ID" />
