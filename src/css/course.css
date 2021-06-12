@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 10px 20px;
+  margin: 20px;
   padding-bottom: 10px;
   /* border: orangered solid 1px; */
   /* border-bottom: solid 1px #568dca; */
@@ -23,12 +23,12 @@
 main .cont {
   width: 100vw;
   /* min-height: 100vh; */
-  /* height: 100vh; */
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: row;
   padding-top: 50px;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
