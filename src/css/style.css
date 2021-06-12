@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 html {
   /* font-size: 62.5%; */
 }
@@ -40,7 +41,7 @@ html {
 /* Glob */
 /* =============== */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
 img {
@@ -103,6 +104,10 @@ input[type="number"] {
   border-radius: 3px;
   margin: 20px 0;
   display: block;
+  transition: background 500ms ease-in-out;
+}
+.btn:hover{
+  background:#36587f ;
 }
 /* =============== */
 /*  */
@@ -114,6 +119,12 @@ input[type="number"] {
 }
 .space {
   margin-left: 20px;
+}
+@media (max-width: 990px) {
+  .btn{
+    padding: 10px 20px;
+    font-size: 1rem;  
+  }
 }
 
 /* =============== */
@@ -193,10 +204,10 @@ input[type="number"] {
     display: none;
   }
   .show {
-    background: cornsilk;
+    background: #f4f4f4;
     display: flex;
     height: 100vh;
-    width: 60vw;
+    width: 75vw;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -294,13 +305,13 @@ header {
 }
 .hero p {
   font-size: 1.3rem;
-  line-height: 2rem;
+  /* line-height: 2rem; */
   margin-right: 50px;
   max-width: 70%;
   display: block;
 }
 .heading {
-  margin-bottom: var(--margin-1);
+  margin-bottom:.3rem;
 }
 .hero .left {
   width: 100%;
@@ -323,9 +334,14 @@ header {
 .svgImg {
   height: 20rem;
   width: 20rem;
+  transition: all 1000ms ease-in-out;
+
   /* position: absolute;
   left: 0; */
   /* transform: translate(-50px, -60px); */
+}
+.svgImg:hover{
+  transform: translate(-5px, -6px); 
 }
 @media (max-width: 990px) {
   /* =========temp========= */
@@ -340,7 +356,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   
   }
   .hero-typo {
@@ -348,8 +364,8 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    /* text-align: center; */
+    align-items: flex-start;
     justify-content: center;
   }
   .hero h1 {
