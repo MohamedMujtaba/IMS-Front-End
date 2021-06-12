@@ -8,8 +8,8 @@ const Login = () => {
     <>
       <section>
         <div className="login-cont">
-        <Link className="logo-cont" to="/">
-            <img className="logo" src={logo} alt="" />
+        <Link className="loginLogo" to="/">
+            <img className="logo " src={logo} alt="" />
           </Link>
           <div className="input-handler">
             <label for="university ID">University ID</label>

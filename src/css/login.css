@@ -18,13 +18,8 @@ section {
   border-radius: 10px;
   position: relative;
 }
-img {
-  /* width: 30%; */
-  height: 70px;
-  margin-bottom: 50px;
-  /* position: absolute;
-  top: 10%;
-  left: 20%; */
+.loginLogo {
+  margin-bottom: 1.7rem;
 }
 .input-handler {
   width: 70%;
